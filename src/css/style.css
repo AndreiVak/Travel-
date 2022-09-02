@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sticky {
+    position: relative;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: #5474FD;
+    padding: 32px 0 31px;
+}
+
+.header__title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.header__item {
+    font-family: 'Aleo', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.firstScreen {
+    padding: 264px 0 142px;
+    background: url("../images/firstscreenBG.png") center/cover no-repeat;
+    text-align: center;
+    height: calc(100vh - 93px);
+}
+
+.firstScreen__title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.firstScreen__description {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 6.82px;
+    color: #FFFFFF;
+}
+
+.firstScreen__form {
+    max-width: 653px;
+    position: relative;
+    height: 63px;
+    margin: 48px auto 107px;
+}
+
+.firstScreen__input {
+    width: 100%;
+    padding: 19px 113px 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: #999999;
+}
+
+.firstScreen__btn {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background: #5474FD;
+    width: 153px;
+    height: 48px;
+    outline: none;
+    border: none;
+    font-family: 'Aleo', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.firstScreen__link {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    color: #FFFFFF;
+}
+
+.secondScreen {
+    padding: 118px 0 117px;
+    background: url("../images/secondscreenBG.png") center/cover no-repeat;
+
+}
+
+.secondScreen__block {
+    display: flex;
+    align-items: center;
+}
+
+.secondScreen__text, .secondScreen__images {
+    width: 50%;
+}
+
+.secondScreen__title {
+    font-family: 'Aleo', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.secondScreen__description {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+    margin: 50px 0 45px;
+    color: #E8E8E8;
+}
+
+.secondScreen__btn {
+    position: absolute;
+    background: #5474FD;
+    padding: 21px 40px 16px;
+    outline: none;
+    border: none;
+    font-family: 'Aleo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.secondScreen__images {
+    padding: 0 0 0 110px;
+}
+
+.secondScreen__img:last-child {
+    float: right;
+    margin: 10px 0 0;
+}
+
+.thirdScreen {
+    background: #333;
+    padding: 80px 0 97px;
+}
+
+.thirdScreen__row {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.thirdScreen__row::before {
+    content: "";
+    position: absolute;
+    max-width: 777px;
+    width: 100%;
+    height: 99px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../images/lineofthirdscreen.svg") center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.0001);
+}
+
+.thirdScreen__icon {
+    position: relative;
+    width: 99px;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 5;
+    margin: 0 auto;
+    background: #333;
+}
+
+.thirdScreen__card {
+    text-align: center;
+}
+
+.thirdScreen__text {
+    font-family: 'Aleo' , sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #E8E8E8;
+    margin-top: 35px;
+}
+
+.fourthScreen {
+    padding: 227px 0 99px;
+    background: url("../images/fourthScreenBG.png") center/cover no-repeat;
+}
+
+.fourthScreen__block {
+    max-width: 547px;
+    padding: 50px 32px;
+    background: #232323;
+    opacity: 0.9;
+}
+
+.fourthScreen__country {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #E8E8E8;
+}
+
+.fourthScreen__title {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 23px 0 13px;
+}
+
+.fourthScreen__description {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E8E8E8;
+    margin: 0 0 46px;
+}
+
+.fourthScreen__btn {
+    background: #5474FD;
+    padding: 21px 64px 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Aleo' , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fifthScreen {
+    padding: 227px 0 99px;
+    background: url("../images/fifthScreenBG.png") center/cover no-repeat;
+}
+
+#fifth__container {
+    display: flex;
+    justify-content: right;
+}
+
+.fifthScreen__block {
+    max-width: 547px;
+    padding: 50px 32px;
+    background: #232323;
+    opacity: 0.9;
+}
+
+.fifthScreen__country {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #E8E8E8;
+}
+
+.fifthScreen__title {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 23px 0 13px;
+}
+
+.fifthScreen__description {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E8E8E8;
+    margin: 0 0 46px;
+}
+
+.fifthScreen__btn {
+    background: #5474FD;
+    padding: 21px 64px 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Aleo' , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*.fourthScreen:last-of-type {*/
+/*    background-image: url("../images/fourScreenBG2.png");*/
+/*}*/
+
+/*.fourthScreen:last-of-type .container {*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+.lastScreen {
+    padding: 128px 0 200px;
+    background: url("../images/lastScreenBG.png") left/cover no-repeat;
+}
+
+.lastScreen__title {
+    font-family: 'Aleo' , sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 90px;
+}
+
+.lastScreen__block {
+    display: flex;
+    background: #333333;
+}
+
+.lastScreen__text {
+    padding: 49px 62px 39px;
+}
+
+.lastScreen__name {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    margin-bottom: 8px;
+}
+
+.lastScreen__description {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E8E8E8;
+}
+
+.footer {
+    background: #232323;
+    padding: 122px 0 47px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__title {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 3.36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer__description {
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: #FFFFFF;
+    margin: 8px 0 17px;
+}
+
+.footer__socs {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
